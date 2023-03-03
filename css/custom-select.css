@@ -1,0 +1,48 @@
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.label-text {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  fill: #212121;
+}
+
+.input-element {
+  padding: 0.5em 2em 0.5em 35px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 0.25em;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input-element:focus {
+  outline: none;
+  border-color: #2196F3;
+}
+
+.input-element:focus + .icon {
+  fill: #2196F3;
+}
+
+.input-element:focus + .icon svg > use > path {
+  fill: #2196F3;
+}

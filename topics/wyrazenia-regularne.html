@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zajęcia 12 - Wyrażenie regularne</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/topic-style.css">
+</head>
+
+<body>
+<header class="header">
+  <h2>Wyrażenie regularne</h2>
+</header>
+<nav>
+  <ul class="go-back">
+    <li><a href="../index.html">&#8592; Powrót</a></li>
+  </ul>
+</nav>
+
+<form>
+  <label>
+    Username
+    <input type="text" name="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space." />
+  </label>
+  <label>
+    Password
+    <input type="password" name="password" required minlength="6" maxlength="12" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
+  </label>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>
